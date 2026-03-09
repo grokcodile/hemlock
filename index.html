@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hemlock Professional Home Inspections — Licensed NC home inspector serving the Raleigh-Durham Triangle. Starting at $325. Same-day reports. Book online in 2 minutes.">
+<title>Hemlock | Professional Home Inspections — Raleigh-Durham Triangle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--deep-hemlock:#1C3320;--needle-green:#3B6B42;--sage-bough:#5A8A5E;--steel:#4A6D8C;--steel-light:#6B8FAB;--cone:#B87070;--cone-light:#D4969A;--twig-brown:#6B4A3A;--bark-night:#302926;--warm-linen:#F5F0EB;--white:#FFFFFF}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--bark-night);background:var(--white);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.nav{background:var(--deep-hemlock);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-mark{width:38px;height:38px;border:2px solid rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-mark svg{width:20px;height:20px}
+.nav-brand{font-weight:800;font-size:20px;letter-spacing:4px;color:white}
+.nav-pipe{color:var(--steel);font-weight:300;font-size:22px;margin:0 5px}
+.nav-desc{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:1px}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.3px;transition:color 0.2s}
+.nav-links a:hover{color:white}
+.nav-cta{background:var(--steel);color:white;padding:10px 24px;border-radius:5px;font-size:11px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;transition:background 0.2s;border:none;cursor:pointer}
+.nav-cta:hover{background:var(--steel-light)}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;width:32px;height:32px;position:relative}
+.nav-toggle span{display:block;width:22px;height:2px;background:white;position:absolute;left:5px;transition:all 0.3s}
+.nav-toggle span:nth-child(1){top:9px}
+.nav-toggle span:nth-child(2){top:15px}
+.nav-toggle span:nth-child(3){top:21px}
+.nav-toggle.active span:nth-child(1){top:15px;transform:rotate(45deg)}
+.nav-toggle.active span:nth-child(2){opacity:0}
+.nav-toggle.active span:nth-child(3){top:15px;transform:rotate(-45deg)}
+.hero{background:white;padding:80px 24px 72px;text-align:center}
+.hero-tag{font-family:'DM Serif Display',serif;font-style:italic;font-size:15px;color:var(--cone);margin-bottom:18px;display:flex;align-items:center;justify-content:center;gap:14px}
+.hero-tag::before,.hero-tag::after{content:'';width:44px;height:1px;background:var(--cone-light)}
+.hero-h1{font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,58px);color:var(--deep-hemlock);line-height:1.08;margin-bottom:22px;font-weight:400}
+.hero-h1 em{font-style:italic;color:var(--steel)}
+.hero-p{font-weight:300;font-size:17px;color:#999;line-height:1.7;max-width:540px;margin:0 auto 28px}
+.hero-price{font-size:14px;color:var(--bark-night);margin-bottom:32px}
+.hero-price strong{font-size:20px;color:var(--deep-hemlock)}
+.hero-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--deep-hemlock);color:white;padding:16px 38px;border-radius:6px;font-family:'Manrope',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:background 0.2s;display:inline-block}
+.btn-primary:hover{background:var(--needle-green)}
+.btn-secondary{border:2px solid var(--steel);color:var(--steel);padding:14px 32px;border-radius:6px;font-family:'Manrope',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.5px;background:transparent;cursor:pointer;transition:all 0.2s;display:inline-block}
+.btn-secondary:hover{background:var(--steel);color:white}
+.hero-location{margin-top:36px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#ccc}
+.hero-note{margin-top:12px;font-size:12px;color:var(--sage-bough);font-weight:500}
+.tri-div{display:flex;justify-content:center;gap:4px}
+.td{height:4px}.td-g{width:220px;background:var(--deep-hemlock)}.td-s{width:90px;background:var(--steel)}.td-c{width:36px;background:var(--cone)}
+.trust-bar{background:var(--warm-linen);padding:28px 24px}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:14px}
+.trust-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ti-g{background:rgba(59,107,66,0.1);color:var(--needle-green)}.ti-s{background:rgba(74,109,140,0.1);color:var(--steel)}.ti-c{background:rgba(184,112,112,0.1);color:var(--cone)}
+.trust-text{font-size:14px;font-weight:700;color:var(--bark-night)}
+.trust-sub{font-size:11px;color:#aaa;margin-top:2px}
+.section{padding:64px 24px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:44px}
+.section-label{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:8px}
+.label-cone{color:var(--cone)}.label-steel{color:var(--steel)}
+.section-h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,34px);color:var(--deep-hemlock);font-weight:400}
+.about{background:white}
+.about-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:center}
+.about-photo{width:260px;height:300px;border-radius:12px;background:var(--warm-linen);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.about-photo::before{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--steel) 65%,var(--cone) 65%)}
+.about-photo-placeholder{font-size:64px;color:var(--sage-bough);opacity:0.4}
+.about-name{font-family:'DM Serif Display',serif;font-size:28px;color:var(--deep-hemlock);margin-bottom:4px}
+.about-title{font-size:12px;color:var(--steel);font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+.about-text{font-size:15px;color:#666;line-height:1.8;margin-bottom:16px}
+.about-text strong{color:var(--bark-night)}
+.about-license{font-size:12px;color:#aaa;letter-spacing:0.5px;margin-top:8px}
+.guarantee{background:var(--deep-hemlock);text-align:center}
+.guarantee-inner{max-width:700px;margin:0 auto}
+.guarantee-icon{font-size:36px;margin-bottom:16px}
+.guarantee-h2{font-family:'DM Serif Display',serif;font-size:24px;color:white;font-weight:400;margin-bottom:12px}
+.guarantee-text{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.7}
+.guarantee-text strong{color:white}
+.services{background:white}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{border:1px solid #eee;border-radius:10px;padding:28px;position:relative;overflow:hidden;transition:box-shadow 0.2s}
+.service-card:hover{box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.sc1::before{background:var(--needle-green)}.sc2::before{background:var(--steel)}.sc3::before{background:var(--cone)}
+.sc-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px}
+.sci-g{background:rgba(59,107,66,0.08);color:var(--needle-green)}.sci-s{background:rgba(74,109,140,0.08);color:var(--steel)}.sci-c{background:rgba(184,112,112,0.08);color:var(--cone)}
+.sc-title{font-weight:700;font-size:17px;color:var(--deep-hemlock);margin-bottom:10px}
+.sc-text{font-size:14px;color:#888;line-height:1.7;margin-bottom:16px}
+.sc-link{font-size:12px;font-weight:600;color:var(--steel);letter-spacing:0.5px;transition:color 0.2s}
+.sc-link:hover{color:var(--deep-hemlock)}
+.pricing{background:var(--warm-linen)}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;margin:0 auto}
+.pricing-card{background:white;border-radius:10px;padding:32px;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+.pc-title{font-weight:700;font-size:18px;color:var(--deep-hemlock);margin-bottom:8px}
+.pc-price{font-family:'DM Serif Display',serif;font-size:36px;color:var(--steel);margin-bottom:4px}
+.pc-note{font-size:12px;color:#aaa;margin-bottom:16px}
+.pc-list{list-style:none;padding:0}
+.pc-list li{font-size:13px;color:#666;line-height:2;padding-left:18px;position:relative}
+.pc-list li::before{content:'✓';position:absolute;left:0;color:var(--needle-green);font-weight:700;font-size:12px}
+.pricing-note{text-align:center;margin-top:24px;font-size:13px;color:#999;line-height:1.6;max-width:600px;margin-left:auto;margin-right:auto}
+.pricing-note strong{color:var(--bark-night)}
+.checklist{background:white}
+.checklist-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1000px;margin:0 auto}
+.checklist-col h3{font-weight:700;font-size:15px;color:var(--deep-hemlock);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.checklist-col h3 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.checklist-col ul{list-style:none;padding:0;columns:2;column-gap:24px}
+.checklist-col ul li{font-size:12px;color:#777;line-height:2.2;padding-left:16px;position:relative;break-inside:avoid}
+.inc-list li::before{content:'✓';position:absolute;left:0;color:var(--needle-green);font-weight:700;font-size:11px}
+.exc-list li::before{content:'✕';position:absolute;left:0;color:var(--cone);font-weight:700;font-size:11px}
+.exc-note{font-size:12px;color:#aaa;margin-top:16px;line-height:1.6}
+.report{background:var(--warm-linen)}
+.report-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.report-item{background:white;padding:28px 20px;border-radius:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.03);transition:transform 0.2s}
+.report-item:hover{transform:translateY(-4px)}
+.ri-icon{font-size:28px;margin-bottom:14px}
+.ri-title{font-weight:700;font-size:14px;color:var(--deep-hemlock);margin-bottom:8px}
+.ri-text{font-size:12px;color:#999;line-height:1.55}
+.report-cta{text-align:center;margin-top:28px}
+.testimonials{background:white}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.test-card{background:var(--warm-linen);padding:32px;border-radius:10px}
+.test-stars{font-size:16px;letter-spacing:2px;color:var(--cone);margin-bottom:16px}
+.test-quote{font-size:14px;color:var(--bark-night);line-height:1.75;margin-bottom:20px;font-style:italic}
+.test-author{font-weight:700;font-size:14px;color:var(--deep-hemlock)}
+.test-detail{font-size:11px;color:#999;margin-top:3px}
+.test-more{text-align:center;margin-top:28px}
+.test-more a{font-size:13px;font-weight:600;color:var(--steel);letter-spacing:0.5px}
+.test-more a:hover{color:var(--deep-hemlock)}
+.process{background:var(--warm-linen)}
+.process-steps{max-width:1000px;margin:0 auto;display:flex;gap:0;justify-content:center}
+.process-step{flex:1;text-align:center;padding:0 20px;position:relative}
+.ps-num{font-family:'DM Serif Display',serif;font-size:40px;color:var(--steel);margin-bottom:12px;line-height:1}
+.ps-title{font-weight:700;font-size:15px;color:var(--deep-hemlock);margin-bottom:8px}
+.ps-text{font-size:13px;color:#999;line-height:1.6}
+.ps-arrow{position:absolute;right:-8px;top:22px;font-size:20px;color:#ccc}
+.credentials{background:var(--deep-hemlock)}
+.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px;margin:0 auto;text-align:center}
+.cred-icon{font-size:28px;margin-bottom:12px}
+.cred-title{font-weight:700;font-size:14px;color:white;margin-bottom:6px}
+.cred-text{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6}
+.faq{background:white}
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid #eee;padding:20px 0;cursor:pointer}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:700;font-size:15px;color:var(--deep-hemlock);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-q::after{content:'+';font-size:20px;font-weight:300;color:var(--steel);flex-shrink:0;transition:transform 0.2s}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{font-size:13px;color:#888;line-height:1.7;max-height:0;overflow:hidden;transition:max-height 0.3s ease,padding 0.3s ease;padding-top:0}
+.faq-item.open .faq-a{max-height:300px;padding-top:12px}
+.cta-band{background:var(--bark-night);padding:64px 24px;text-align:center;position:relative}
+.cta-band::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--needle-green),var(--steel),var(--cone))}
+.cta-band-h2{font-family:'DM Serif Display',serif;font-size:clamp(24px,3vw,32px);color:white;font-weight:400;margin-bottom:6px}
+.cta-band-tagline{font-family:'DM Serif Display',serif;font-style:italic;font-size:15px;color:var(--cone-light);margin-bottom:24px}
+.cta-band-p{font-size:15px;color:rgba(255,255,255,0.45);margin-bottom:32px}
+.btn-steel{display:inline-block;background:var(--steel);color:white;padding:18px 44px;border-radius:6px;font-family:'Manrope',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:background 0.2s}
+.btn-steel:hover{background:var(--steel-light)}
+.cta-band-phone{margin-top:18px;font-size:13px;color:rgba(255,255,255,0.35);letter-spacing:1px}
+.cta-band-phone a{color:var(--cone-light);font-weight:600}
+.cta-band-phone a:hover{color:white}
+.footer{background:var(--deep-hemlock);padding:40px 24px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;align-items:start}
+.footer-brand-text{font-weight:800;font-size:16px;letter-spacing:3px;color:white;margin-bottom:4px}
+.footer-sub{font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:1px;margin-bottom:8px}
+.footer-contact{font-size:11px;color:rgba(255,255,255,0.35);line-height:1.8}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--steel-light);margin-bottom:12px}
+.footer-col a{display:block;font-size:12px;color:rgba(255,255,255,0.5);line-height:2.2;transition:color 0.2s}
+.footer-col a:hover{color:white}
+.footer-areas{font-size:11px;color:rgba(255,255,255,0.35);line-height:1.8}
+.footer-bottom{max-width:1200px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
+.footer-domain{font-size:12px;font-weight:700}
+.footer-domain .base{color:rgba(255,255,255,0.5)}
+.footer-domain .dot{color:var(--cone)}
+.footer-domain .pro{color:var(--steel)}
+
+@media(max-width:1024px){.services-grid,.report-grid{grid-template-columns:repeat(2,1fr)}.test-grid{grid-template-columns:repeat(2,1fr)}.test-card:last-child{grid-column:1/-1;max-width:400px;margin:0 auto}.cred-grid{grid-template-columns:1fr}.process-steps{flex-wrap:wrap;gap:24px}.process-step{flex:none;width:45%}.ps-arrow{display:none}.about-grid{grid-template-columns:1fr;text-align:center}.about-photo{margin:0 auto}}
+@media(max-width:768px){.nav-inner{padding:0 16px}.nav-desc,.nav-pipe{display:none}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(–deep-hemlock);flex-direction:column;padding:24px;gap:20px;box-shadow:0 12px 24px rgba(0,0,0,0.2)}.nav-links.open{display:flex}.nav-links a{font-size:16px;color:rgba(255,255,255,0.7)}.nav-cta{width:100%;text-align:center;padding:14px;font-size:14px}.nav-toggle{display:block}.hero{padding:60px 20px 56px}.hero-tag::before,.hero-tag::after{width:24px}.hero-p{font-size:15px}.hero-btns{flex-direction:column;align-items:center}.btn-primary,.btn-secondary{width:100%;max-width:320px;text-align:center}.td-g{width:140px}.td-s{width:60px}.td-c{width:24px}.trust-inner{flex-direction:column;gap:20px;align-items:flex-start;padding:0 16px}.services-grid,.pricing-grid{grid-template-columns:1fr}.report-grid{grid-template-columns:1fr 1fr}.test-grid{grid-template-columns:1fr}.test-card:last-child{max-width:none}.process-steps{flex-direction:column;align-items:center}.process-step{width:100%;max-width:320px}.checklist-grid{grid-template-columns:1fr}.checklist-col ul{columns:1}.footer-inner{grid-template-columns:1fr;text-align:center}.footer-bottom{justify-content:center;text-align:center}}
+@media(max-width:480px){.nav-brand{font-size:16px;letter-spacing:3px}.report-grid{grid-template-columns:1fr}.hero-h1{font-size:32px}}
+</style>
+
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="#" class="nav-logo"><div class="nav-mark"><svg viewBox="0 0 20 20" fill="none"><g stroke="rgba(255,255,255,0.7)" stroke-width="1.4" stroke-linecap="round"><line x1="10" y1="2" x2="10" y2="16"/><line x1="5" y1="5.5" x2="10" y2="4"/><line x1="15" y1="5.5" x2="10" y2="4"/><line x1="4" y1="8.5" x2="10" y2="7"/><line x1="16" y1="8.5" x2="10" y2="7"/><line x1="5" y1="11.5" x2="10" y2="10"/><line x1="15" y1="11.5" x2="10" y2="10"/><line x1="6.5" y1="13.5" x2="10" y2="12.5"/><line x1="13.5" y1="13.5" x2="10" y2="12.5"/></g></svg></div><span class="nav-brand">HEMLOCK</span><span class="nav-pipe">|</span><span class="nav-desc">Professional Home Inspections</span></a><div class="nav-links" id="navLinks"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#sample-report">Sample Report</a><a href="#faq">FAQs</a><a href="#reviews">Reviews</a><a href="#book" class="nav-cta">Schedule Now</a></div><button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+
+<section class="hero" id="home"><div class="hero-tag">Rooted in detail</div><h1 class="hero-h1">Your home deserves<br>a <em>thorough</em> inspection.</h1><p class="hero-p">We examine every layer with the care and precision that protects your biggest investment. Licensed, certified, and locally owned in the Triangle.</p><div class="hero-price">Home inspections starting at <strong>$325</strong> &nbsp;·&nbsp; Most inspections $400–$600</div><div class="hero-btns"><a href="#book" class="btn-primary">Schedule Now</a><a href="#sample-report" class="btn-secondary">View Sample Report</a></div><div class="hero-location">Serving the Raleigh-Durham Triangle</div><div class="hero-note">Online scheduling takes 2 minutes &nbsp;·&nbsp; Exact pricing shown before you book</div></section>
+
+<div class="tri-div"><div class="td td-g"></div><div class="td td-s"></div><div class="td td-c"></div></div>
+
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item"><div class="trust-icon ti-g">&#10003;</div><div><div class="trust-text">NC Licensed Inspector</div><div class="trust-sub">State certified, insured &amp; bonded</div></div></div><div class="trust-item"><div class="trust-icon ti-s">&#9878;</div><div><div class="trust-text">Same-Day Reports</div><div class="trust-sub">Digital delivery with photos within 24 hrs</div></div></div><div class="trust-item"><div class="trust-icon ti-c">&#9825;</div><div><div class="trust-text">Locally Owned</div><div class="trust-sub">Rooted in the Triangle since 2026</div></div></div></div></div>
+
+<section class="section about" id="about"><div class="section-inner"><div class="about-grid"><div class="about-photo"><div class="about-photo-placeholder">&#128100;</div></div><div><div class="section-label label-cone">Meet Your Inspector</div><div class="about-name">Hi, I'm Ethan.</div><div class="about-title">Owner &amp; Licensed Home Inspector</div><p class="about-text">I provide the greater Raleigh-Durham Triangle with quality, professional home inspections. Fully licensed by the <strong>North Carolina Home Inspector Licensure Board</strong>, I'm here to help provide a clear understanding of your home's condition and identify potential problems before they become surprises.</p><p class="about-text">I understand there are many costs when purchasing a home. That's why I guarantee you'll be <strong>100% satisfied</strong> with the quality of my inspection — or you pay nothing.</p><div class="about-license">NC License #XXXXX</div></div></div></div></section>
+
+<section class="section guarantee"><div class="guarantee-inner"><div class="guarantee-icon">&#9733;</div><h2 class="guarantee-h2">Our 100% Satisfaction Guarantee</h2><p class="guarantee-text">If you are not <strong>100% satisfied</strong> with the quality of the inspection, simply tell us and we'll either make it right or the inspection is <strong>free</strong>. No questions asked.</p></div></section>
+
+<section class="section services" id="services"><div class="section-inner"><div class="section-header"><div class="section-label label-cone">What We Inspect</div><h2 class="section-h2">Comprehensive Home Inspections</h2></div><div class="services-grid"><div class="service-card sc1"><div class="sc-icon sci-g">&#8962;</div><div class="sc-title">Buyer's Inspection</div><div class="sc-text">Complete evaluation before you buy. Roof to foundation, every major system examined and documented. Schedule immediately after going under contract.</div><a href="#book" class="sc-link">Schedule Now &rarr;</a></div><div class="service-card sc2"><div class="sc-icon sci-s">&#9881;</div><div class="sc-title">Pre-Listing Inspection</div><div class="sc-text">Know your home's condition before listing. Address issues upfront, remove uncertainty, and gain a competitive advantage in today's market.</div><a href="#book" class="sc-link">Schedule Now &rarr;</a></div><div class="service-card sc3"><div class="sc-icon sci-c">&#9670;</div><div class="sc-title">New Construction</div><div class="sc-text">Even brand new builds need a third-party review. Sub-contractors and city inspectors can't catch everything. We make sure nothing was missed.</div><a href="#book" class="sc-link">Schedule Now &rarr;</a></div></div></div></section>
+
+<section class="section pricing" id="pricing"><div class="section-inner"><div class="section-header"><div class="section-label label-steel">Transparent Pricing</div><h2 class="section-h2">No Hidden Costs. Ever.</h2></div><div class="pricing-grid"><div class="pricing-card"><div class="pc-title">Standard Inspection</div><div class="pc-price">$325+</div><div class="pc-note">Newer homes under 1,500 sq ft</div><ul class="pc-list"><li>Full home inspection (3-4 hours)</li><li>Same-day digital report with photos</li><li>Thermal imaging included</li><li>Free follow-up support</li><li>Weekend appointments available</li><li>No extra charge for sprinkler systems</li></ul></div><div class="pricing-card"><div class="pc-title">Factors That Affect Price</div><div class="pc-price" style="font-size:24px;color:var(--bark-night)">$400–$600</div><div class="pc-note">Most inspections fall in this range</div><ul class="pc-list"><li>Larger homes (more square footage)</li><li>Older homes (more systems to evaluate)</li><li>Crawl space foundations</li><li>New construction inspections</li><li>Additional structures</li></ul></div></div><div class="pricing-note"><strong>Exact pricing shown when you schedule online.</strong> No surprises — you'll see your total before you book. Payment due at booking to secure your date.</div></div></section>
+
+<section class="section checklist" id="checklist"><div class="section-inner"><div class="section-header"><div class="section-label label-cone">Inspection Scope</div><h2 class="section-h2">What's Included &amp; What's Not</h2></div><div class="checklist-grid"><div class="checklist-col"><h3><span class="dot" style="background:var(--needle-green)"></span> Included in Every Inspection</h3><ul class="inc-list"><li>Roof covering &amp; structure</li><li>Attic insulation &amp; ventilation</li><li>Foundation &amp; crawl spaces</li><li>Electrical systems &amp; panels</li><li>Plumbing systems &amp; fixtures</li><li>HVAC heating &amp; cooling</li><li>Water heater</li><li>Interior walls, ceilings &amp; doors</li><li>Exterior walls, doors &amp; windows</li><li>Grading &amp; drainage</li><li>Gutters &amp; downspouts</li><li>Fireplaces &amp; chimneys</li><li>Garage doors &amp; openers</li><li>Built-in appliances</li><li>Smoke &amp; CO detectors</li><li>Stairways, porches &amp; decks</li><li>Thermal imaging scan</li><li>Sprinkler systems</li></ul></div><div class="checklist-col"><h3><span class="dot" style="background:var(--cone)"></span> Not Included</h3><ul class="exc-list"><li>Mold testing</li><li>Termite / pest inspection</li><li>Lead-based paint testing</li><li>Pool &amp; spa systems</li><li>Well &amp; septic systems</li><li>Solar panels</li><li>Low voltage systems</li><li>Fences &amp; outbuildings</li><li>Window blinds</li><li>Manufactured / mobile homes</li><li>Commercial buildings</li></ul><p class="exc-note">Need a termite inspection? We have a trusted third-party partner. Just ask when you schedule.</p></div></div></div></section>
+
+<section class="section report" id="sample-report"><div class="section-inner"><div class="section-header"><div class="section-label label-steel">Your Report</div><h2 class="section-h2">Clean, Easy to Read, Delivered Fast</h2></div><div class="report-grid"><div class="report-item"><div class="ri-icon">&#128247;</div><div class="ri-title">200+ Photos</div><div class="ri-text">Every finding documented with clear, labeled photographs</div></div><div class="report-item"><div class="ri-icon">&#128196;</div><div class="ri-title">HTML + PDF Report</div><div class="ri-text">Interactive web version and downloadable PDF for your records</div></div><div class="report-item"><div class="ri-icon">&#128293;</div><div class="ri-title">Thermal Imaging</div><div class="ri-text">Detects hidden moisture, leaks, and missing insulation in hard-to-reach areas</div></div><div class="report-item"><div class="ri-icon">&#9201;</div><div class="ri-title">Same-Day Delivery</div><div class="ri-text">Most reports delivered the same day. Always within 24 hours</div></div></div><div class="report-cta"><a href="#" class="btn-secondary">View Sample Report</a></div></div></section>
+
+<section class="section testimonials" id="reviews"><div class="section-inner"><div class="section-header"><div class="section-label label-cone">What They're Saying</div><h2 class="section-h2">Trusted by Triangle Homebuyers</h2></div><div class="test-grid"><div class="test-card"><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="test-quote">"Ethan found issues three other inspectors missed on previous homes we'd looked at. His report was incredibly detailed and easy to understand."</div><div class="test-author">Sarah T.</div><div class="test-detail">First-time buyer, Cary</div></div><div class="test-card"><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="test-quote">"I recommend Hemlock to all my clients. The reports are professional, thorough, and always delivered same day. Makes my job easier."</div><div class="test-author">Mike R.</div><div class="test-detail">Real estate agent, Raleigh</div></div><div class="test-card"><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="test-quote">"Got our inspection report before dinner the same day. Every photo was labeled, every issue explained clearly. Worth every penny."</div><div class="test-author">James &amp; Lin K.</div><div class="test-detail">Relocating family, Durham</div></div></div><div class="test-more"><a href="#">Read More Reviews &rarr;</a></div></div></section>
+
+<section class="section process"><div class="section-inner"><div class="section-header"><div class="section-label label-steel">How It Works</div><h2 class="section-h2">Four Simple Steps</h2></div><div class="process-steps"><div class="process-step"><div class="ps-num">01</div><div class="ps-title">Schedule Online</div><div class="ps-text">Takes 2 minutes. Exact pricing shown before you book. Available 24/7 including weekends.</div><span class="ps-arrow">&rarr;</span></div><div class="process-step"><div class="ps-num">02</div><div class="ps-title">We Inspect</div><div class="ps-text">3-4 hours on site. Attend the last hour to walk through findings together.</div><span class="ps-arrow">&rarr;</span></div><div class="process-step"><div class="ps-num">03</div><div class="ps-title">Get Your Report</div><div class="ps-text">Same-day digital report in HTML and PDF. Share with your agent instantly.</div><span class="ps-arrow">&rarr;</span></div><div class="process-step"><div class="ps-num">04</div><div class="ps-title">We Follow Up</div><div class="ps-text">Questions after closing? Call anytime. We stand behind our work.</div></div></div></div></section>
+
+<section class="section credentials"><div class="section-inner"><div class="cred-grid"><div class="cred-item"><div class="cred-icon">&#128737;</div><div class="cred-title">Fully Insured</div><div class="cred-text">General liability and errors &amp; omissions coverage. You're protected.</div></div><div class="cred-item"><div class="cred-icon">&#128197;</div><div class="cred-title">Easy Online Scheduling</div><div class="cred-text">Available 24/7. Weekend appointments at no extra cost. Takes about 2 minutes.</div></div><div class="cred-item"><div class="cred-icon">&#128203;</div><div class="cred-title">Clear, Concise Reporting</div><div class="cred-text">Organized, readable, and delivered fast. Documenting results clearly is where we shine.</div></div></div></div></section>
+
+<section class="section faq" id="faq"><div class="section-inner"><div class="section-header"><div class="section-label label-cone">Common Questions</div><h2 class="section-h2">Frequently Asked Questions</h2></div><div class="faq-list"><div class="faq-item"><div class="faq-q">What is a home inspection?</div><div class="faq-a">A home inspection is a visual survey and performance evaluation of a home's systems and components. It provides information about the general condition at the time of inspection — not a comprehensive investigation behind walls or under floors, but a thorough evaluation of everything that can be seen and accessed.</div></div><div class="faq-item"><div class="faq-q">How long does an inspection take?</div><div class="faq-a">A thorough home inspection typically lasts 3-4 hours depending on the home's size and age. A quality inspection should never be rushed — thoroughness is the whole point.</div></div><div class="faq-item"><div class="faq-q">Should I be present during the inspection?</div><div class="faq-a">Inspections can be lengthy, so many buyers attend toward the end to get a summary of findings. It's always best to be there if possible so we can review findings with you in person. You're not required to attend.</div></div><div class="faq-item"><div class="faq-q">When should I schedule an inspection?</div><div class="faq-a">We recommend scheduling immediately after going under contract due to time constraints during your due diligence period. This allows time for repair estimates if needed. We offer 24/7 online scheduling and weekend appointments at no extra cost.</div></div><div class="faq-item"><div class="faq-q">How much does an inspection cost?</div><div class="faq-a">Inspections start at $325 for newer homes under 1,500 sq ft. Most fall between $400-$600 depending on size, age, and foundation type. We are completely transparent — when you schedule online, you'll see your exact total before booking. No hidden costs, ever.</div></div><div class="faq-item"><div class="faq-q">When will I receive the report?</div><div class="faq-a">In most cases, the same day. Always within 24 hours. You'll receive both an interactive HTML version and a downloadable PDF.</div></div><div class="faq-item"><div class="faq-q">Can a home inspection fail?</div><div class="faq-a">No. Unlike municipal code inspections, we don't pass or fail homes. We provide the best information to help you make informed decisions. Most findings are maintenance items — but we do identify major defects and safety hazards when present.</div></div><div class="faq-item"><div class="faq-q">What if the report reveals problems?</div><div class="faq-a">No house is perfect. Most findings are maintenance items and minor imperfections. When major defects are found, every situation is different — it's up to you and your agent to decide how to proceed.</div></div><div class="faq-item"><div class="faq-q">Who receives a copy of the report?</div><div class="faq-a">The report is YOUR report. We won't share it without your consent. When you schedule, we'll ask if you'd like us to send a copy to your agent or other parties.</div></div><div class="faq-item"><div class="faq-q">Do I need an inspection on new construction?</div><div class="faq-a">Absolutely. Most builders provide quality work, but sub-contractors and city inspectors can't catch everything. A third-party inspection ensures nothing was missed before you close.</div></div><div class="faq-item"><div class="faq-q">Should I get an inspection before selling?</div><div class="faq-a">A pre-listing inspection gives you a clear picture of your home's condition before buyers discover issues. Address problems upfront, remove uncertainty, and gain a competitive advantage.</div></div><div class="faq-item"><div class="faq-q">What if I have questions after the inspection?</div><div class="faq-a">Contact us anytime. We're happy to answer questions about your report — whether it's the day after or months later. We stand behind our work.</div></div></div></div></section>
+
+<section class="cta-band" id="book"><h2 class="cta-band-h2">Your home purchase is important.</h2><div class="cta-band-tagline">We don't cut corners. Ever.</div><p class="cta-band-p">Scheduling takes 2 minutes. Most inspections completed within 48 hours of booking.</p><a href="mailto:ethan@hemlock.pro" class="btn-steel">Schedule Your Inspection</a><div class="cta-band-phone">Or call/text directly: <a href="tel:+19195550142">(919) 555-0142</a></div></section>
+
+<footer class="footer"><div class="footer-inner"><div><div class="footer-brand-text">HEMLOCK</div><div class="footer-sub">Professional Home Inspections</div><div class="footer-contact">Ethan — Owner &amp; Licensed Inspector<br>NC License #XXXXX<br><br><a href="mailto:ethan@hemlock.pro" style="color:var(--steel-light)">ethan@hemlock.pro</a><br><a href="tel:+19195550142" style="color:rgba(255,255,255,0.5)">(919) 555-0142</a></div></div><div class="footer-col"><h4>Quick Links</h4><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#sample-report">Sample Report</a><a href="#faq">FAQs</a><a href="#reviews">Reviews</a><a href="#book">Schedule Now</a></div><div class="footer-col"><h4>Areas We Serve</h4><div class="footer-areas">Raleigh · Durham · Cary · Apex<br>Chapel Hill · Wendell · Wake Forest<br>Holly Springs · Fuquay-Varina · Garner<br>Knightdale · Morrisville · Clayton<br>Pittsboro · Sanford · Smithfield</div></div></div><div class="footer-bottom"><div class="footer-copy">&copy; 2026 Hemlock Professional Home Inspections LLC. All rights reserved.</div><div class="footer-domain"><span class="base">hemlock</span><span class="dot">.</span><span class="pro">pro</span></div></div></footer>
+
+<script>
+const toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{toggle.classList.toggle('active');links.classList.toggle('open')});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{toggle.classList.remove('active');links.classList.remove('open')}));
+document.querySelectorAll('.faq-item').forEach(item=>{item.querySelector('.faq-q').addEventListener('click',()=>{const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)item.classList.add('open')})});
+</script>
+
+</body>
+</html>
